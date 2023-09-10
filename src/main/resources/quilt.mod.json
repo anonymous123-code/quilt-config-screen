@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "io.github.anonymous123_code",
+    "id": "quilt_config_screen",
+    "version": "${version}",
+    "metadata": {
+      "name": "Quilt Config Screen",
+      "description": "Adds a config screen for all mods using quilt config",
+      "contributors": {
+        "anonymous123-code": "Owner"
+      },
+      "contact": {
+        "homepage": "https://anonymous123-code.github.io",
+        "issues": "https://github.com/anonymous123-code/quilt-config-screen-mod/issues",
+        "sources": "https://github.com/anonymous123-code/quilt-config-screen-mod/"
+      },
+      "icon": "assets/quilt_config_screen/icon.png"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "modmenu": "io.github.anonymous123_code.quilt_config_screen.QuiltConfigScreen"
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "versions": ">=0.19.1"
+      },
+      {
+        "id": "quilted_fabric_api",
+        "versions": ">=7.0.2"
+      },
+      {
+        "id": "minecraft",
+        "versions": ">=1.20"
+      },
+      {
+        "id": "spruceui",
+        "versions": "5.0.0"
+      },
+      {
+        "id": "modmenu",
+        "optional": true
+      }
+    ]
+  },
+  "mixin": "quilt_config_screen.mixins.json"
+}
